@@ -46,3 +46,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/faiimea
       name: GitHub | faiimea
+
+# [Navigtion]
+nav:
+- 关于:
+    - ABOUT/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
+    - 个人履历: ABOUT/cv-full.md
+    - 文章编写帮助: ABOUT/help.md
+    - 测试文档: ABOUT/test.md
