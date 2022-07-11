@@ -1,8 +1,8 @@
 # [Info]
-site_name: 杨希杰的个人网站 # 左上角标题
-site_url: https://yang-xijie.github.io
-site_author: 杨希杰
-site_description: 杨希杰的个人网站
+site_name: faii-book # 左上角标题
+site_url: https://faiimea.github.io
+site_author: faii
+site_description: faii-book
 
 # [UI]
 ## [top]
@@ -33,16 +33,16 @@ theme:
     repo: fontawesome/brands/github
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
-repo_url: https://github.com/Yang-Xijie/yang-xijie.github.io # 右上角点击跳转的链接
-repo_name: yang-xijie.github.io # 右上角的名字
+repo_url: https://faiimea.github.io # 右上角点击跳转的链接
+repo_name: faii.github.io # 右上角的名字
 ## [bottom-left corner]
-copyright: Copyright &copy; 2022 杨希杰 # 左下角的版权声明
+copyright: Copyright &copy; 2022 faii # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   social: # icons
     - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/24502827
-      name: Bilibili | 我不是小杰 # 鼠标悬浮提示
+      link: https://space.bilibili.com/317064082
+      name: Bilibili | falii- # 鼠标悬浮提示
     - icon: fontawesome/brands/github
-      link: https://github.com/Yang-Xijie
-      name: GitHub | Yang-Xijie
+      link: https://github.com/faiimea
+      name: GitHub | faiimea
