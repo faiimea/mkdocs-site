@@ -15,7 +15,7 @@ title: 虚拟主播
 ### 凑あくあ
 
 ### 戌亥床
-![](media/inui.jpg)
+<img src="https://pic.imgdb.cn/item/62cdff4bf54cd3f93741c01a.jpg" width=25% />
 ### 火羽ひのめ
 
 ### 绊爱
