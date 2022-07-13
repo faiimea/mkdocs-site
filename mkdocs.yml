@@ -56,6 +56,23 @@ nav:
 - Life:
     - Life/index.md
     - 虚拟主播: Life/vtuber.md
+    - 动漫: Life/anime.md
+    - 角色: Life/character.md
+    - gal: Life/gal.md
+    - game: Life/game.md
+- Chase:
+    - Chase/index.md
+    - 音乐: Chase/music.md
+    - 探索: Chase/explore.md
+    - 故事: Chase/story.md
+    - 哲学: Chase/philo.md
+    - 社会: Chase/socie.md
+- Step:
+    - Step/index.md   
+    - 网站: Step/web.md
+    - 书籍: Step/book.md
+    - 项目: Step/project.md
+    - 旅行: Step/travel.md
 
 
 # [Extensions]

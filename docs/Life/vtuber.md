@@ -16,10 +16,30 @@ title: 虚拟主播
 
 ### 戌亥床
 <img src="https://pic.imgdb.cn/item/62cdff4bf54cd3f93741c01a.jpg" width=25% />
+
 ### 火羽ひのめ
 
 ### 绊爱
 
 ## Extraordinary
+>“超高校级别的虚拟主播”
+
+### 夏色祭
+### 宝钟玛琳
+### 犬山玉姬
+### 梅丽莎·金莲花
+### 龙胆尊
+### 文野环
+### 笹木咲
+### 安洁·卡特莉娜
+### 时雨羽衣
+### 珈乐
 
 ## Interesting
+>“有趣的灵魂水陆两栖”
+
+### Nijisanji
+
+### Hololive
+
+### Others
