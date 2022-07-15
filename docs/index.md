@@ -1,8 +1,7 @@
-# 你好
 
-faii-book <https://faiimea.github.io>
+# 你好！
 
-- 通过主题和目录以打开文章
-    - PC端 在上方标签栏选择主题 在左侧目录选择文章
-    - 移动端 点击左上角图标选择主题和文章
-- 搜索关键词以打开文章
+>__"The Brain is Wider Than the Sky."__
+> __我们的头脑比天空更辽阔__
+
+这里是faii的记事簿。
