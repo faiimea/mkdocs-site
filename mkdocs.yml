@@ -73,6 +73,9 @@ nav:
     - 书籍: Step/book.md
     - 项目: Step/project.md
     - 旅行: Step/travel.md
+- blog:
+    - blog/index.md
+    - 汇编器(cpp): blog/assembly.md
 
 
 # [Extensions]
