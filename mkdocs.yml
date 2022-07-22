@@ -75,7 +75,8 @@ nav:
     - 旅行: Step/travel.md
 - blog:
     - blog/index.md
-    - 汇编器(cpp): blog/assembly.md
+    - NandToTeris:
+      - 汇编器(cpp): blog/NandtoTeris/assembly.md
 
 
 # [Extensions]

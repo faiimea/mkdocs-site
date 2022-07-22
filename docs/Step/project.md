@@ -16,3 +16,7 @@ title: 项目
 ## 夏季学期
 
 ## 暑假
+
+### HUJI Nand2Tetris
+
+### MIT 6.042J
