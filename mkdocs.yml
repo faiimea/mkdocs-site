@@ -55,24 +55,39 @@ nav:
     - 测试文档: ABOUT/test.md
 - Life:
     - Life/index.md
-    - 虚拟主播: Life/vtuber.md
-    - 动漫: Life/anime.md
+    - 虚拟主播: 
+        - Vtubers: Life/vtubers/vtuber.md
+        - 绊爱:  Life/vtubers/kizuno.md
+    - 动漫: 
+        - animes: Life/animes/anime.md
+        - Grandblue: Life/animes/Grandblue.md
     - 角色: Life/character.md
-    - gal: Life/gal.md
+    - gal: 
+        - gals: Life/gals/gal.md
     - game: Life/game.md
 - Chase:
     - Chase/index.md
-    - 音乐: Chase/music.md
-    - 探索: Chase/explore.md
-    - 故事: Chase/story.md
-    - 哲学: Chase/philo.md
-    - 社会: Chase/socie.md
+    - 音乐: 
+        - music: Chase/musics/music.md
+    - 探索: 
+        - world: Chase/more/explore.md
+    - 故事: 
+        - stories : Chase/stories/story.md
+    - 哲学: 
+        - 哲学？: Chase/philos/philo.md
+    - 社会: 
+        - 社会? : Chase/socies/socie.md
 - Step:
     - Step/index.md   
     - 网站: Step/web.md
-    - 书籍: Step/book.md
-    - 项目: Step/project.md
-    - 旅行: Step/travel.md
+    - 书籍: 
+        - 书: Step/books/book.md
+    - 项目: 
+        - 项目line: Step/projects/project.md
+        - 项目map: Step/projects/M.A.P.md
+    - 旅行: 
+        - 游记: Step/travels/travel.md
+        - 杭州: Step/travels/hangzhou.md
 - blog:
     - blog/index.md
     - NandToTeris:
