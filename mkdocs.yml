@@ -1,5 +1,5 @@
 # [Info]
-site_name: faii-book # 左上角标题
+site_name: faii-book
 site_url: https://faiimea.github.io
 site_author: faii
 site_description: faii-book
@@ -9,40 +9,40 @@ site_description: faii-book
 theme:
   name: material
   palette: 
-    - scheme: default # 日间模式
-      primary: indigo # 上方的
-      accent: orange # 链接等可交互元件的高亮色
+    - scheme: default 
+      primary: indigo 
+      accent: orange 
       toggle:
-        icon: material/weather-night # 图标
-        name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+        icon: material/weather-night 
+        name: 切换至夜间模式 
+    - scheme: slate 
       primary: indigo
       accent: orange
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
   features:
-    - navigation.tabs # 使用Tab来进行分类
-    - navigation.top # 返回顶部的按钮 在上滑时出现
-    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    - search.highlight # 搜索出的文章关键词加入高亮
-  language: zh # 一些提示性的文字会变成中文
+    - navigation.tabs 
+    - navigation.top 
+    - navigation.indexes 
+    - navigation.expand 
+    - search.suggest 
+    - search.highlight 
+  language: zh 
   icon:
     repo: fontawesome/brands/github
-edit_uri: edit/main/docs # 编辑按钮跳转的链接
+edit_uri: edit/main/docs 
 ## [top-right corner]
-repo_url: https://github.com/faiimea # 右上角点击跳转的链接
-repo_name: faii.github # 右上角的名字
+repo_url: https://github.com/faiimea 
+repo_name: faii.github 
 ## [bottom-left corner]
-copyright: Copyright &copy; 2022 faii # 左下角的版权声明
+copyright: Copyright &copy; 2022 faii 
 ## [bottom-right corner]
 extra:
   social: # icons
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/317064082
-      name: Bilibili | falii- # 鼠标悬浮提示
+      name: Bilibili | falii- 
     - icon: fontawesome/brands/github
       link: https://github.com/faiimea
       name: GitHub | faiimea
@@ -50,7 +50,7 @@ extra:
 # [Navigtion]
 nav:
 - 关于:
-    - ABOUT/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
+    - ABOUT/index.md 
     - 文章编写帮助: ABOUT/help.md
     - 测试文档: ABOUT/test.md
 - Life:
@@ -96,23 +96,22 @@ nav:
 
 # [Extensions]
 plugins:
-  - search: # 现在还不支持中文搜索 支持之后可以设置语言
-    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+  - search: 
       lang:
         - en
         - ja
-  - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+  - tags 
 markdown_extensions:
-  - pymdownx.arithmatex: # latex支持
+  - pymdownx.arithmatex:
       generic: true
-  - attr_list # 给图片后面添加{width="300"}设置大小
+  - attr_list 
   - toc:
-      permalink: true # 固定标题位置为当前位置
-  - pymdownx.highlight: # 代码块高亮
+      permalink: true 
+  - pymdownx.highlight: 
       # linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
-  - pymdownx.superfences # 代码块高亮插件
-  - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.superfences 
+  - meta 
 extra_javascript:
   # latex支持
   # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
@@ -121,5 +120,5 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
 extra_css:
-  - mkdocs/css/no-footer.css # 不使用底部的翻页
-  - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
+  - mkdocs/css/no-footer.css 
+  - mkdocs/css/unordered-list-symbols.css 
