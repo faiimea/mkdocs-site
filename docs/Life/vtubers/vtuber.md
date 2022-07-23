@@ -11,19 +11,19 @@ title: 虚拟主播
 ## Meaningful
 >“不只是vtuber”
 ### 神楽めあ
-<img src="https://i1.hdslb.com/bfs/face/9d7dcfe1eb2b42ab4ca7684e1c3b136372944d84.jpg@240w_240h_1c_1s.webp" width=25% />
+<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c1521.png" width=25% />
 
 ### 凑あくあ
-<img src="https://i0.hdslb.com/bfs/face/a7195c09c6ba4722966d745d6f692035d3fe4d95.jpg@240w_240h_1c_1s.webp" width=25% />
+<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c156c.png" width=25% />
 
 ### 戌亥床
-<img src="https://i1.hdslb.com/bfs/face/d0d7d4cff558ed3c910e1cdc4efc59c193f4676a.jpg@240w_240h_1c_1s.webp" width=25% />
+<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c15eb.png" width=25% />
 
 ### 火羽ひのめ
-<img src="https://i1.hdslb.com/bfs/face/687592beb7343f9d020e2c2a96fe94b6e197af61.jpg@240w_240h_1c_1s.webp" width=25% />
+<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c1561.png" width=25% />
 
 ### 绊爱
-[<img src="https://img.moegirl.org.cn/common/thumb/4/4a/Kizunaai_thumb.png/150px-Kizunaai_thumb.png" width=25%>](https://faiimea.github.io/mkdocs-site/Life/vtubers/kizuno/)
+<a href ="https://faiimea.github.io/mkdocs-site/Life/vtubers/kizuno/"><img src="https://img.moegirl.org.cn/common/thumb/4/4a/Kizunaai_thumb.png/150px-Kizunaai_thumb.png" width=25%></a>
 
 ## Extraordinary
 >“超高校级别的虚拟主播”
