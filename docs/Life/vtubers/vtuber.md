@@ -23,7 +23,7 @@ title: 虚拟主播
 <img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c1561.png" width=25% />
 
 ### 绊爱
-<img src="https://img.moegirl.org.cn/common/thumb/4/4a/Kizunaai_thumb.png/150px-Kizunaai_thumb.png" width=25%>
+<a href ="https://faiimea.github.io/mkdocs-site/Life/vtubers/kizuno/"><img src=https://pic.imgdb.cn/item/62db50bdf54cd3f937976c87.png width=25%></a>
 
 [“嗨多磨！这里是想和更多人建立羁绊的KizunaAI～”](https://faiimea.github.io/mkdocs-site/Life/vtubers/kizuno/)
 
