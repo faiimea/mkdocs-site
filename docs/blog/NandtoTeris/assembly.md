@@ -102,6 +102,28 @@ str.erase (str.begin()+5, str.end()-9);// "This sentence."
     }
     return str;
   ```
+
+- 字符串的格式化（去空格，去注释）
+   - 由于一句话的注释段仅有可能出现在原句后，若在原句前则失去了代码作用，因此用一行substr足够了
+   ```cpp
+   std::string Parser::RemoveSpaceAndComment(const std::string &str)
+  {
+    return RemoveSpace(RemoveComment(str));
+  }
+
+  std::string Parser::RemoveSpace(const std::string &str)
+  {
+    auto tmpStr = str;
+    auto iter = remove_if(tmpStr.begin(), tmpStr.end(), ::isspace);
+    tmpStr.erase(iter, tmpStr.end());
+    return tmpStr;
+  }
+
+  std::string Parser::RemoveComment(const std::string &str)
+  {
+    return str.substr(0, str.find_first_of("//"));
+  }
+   ```
 ## 问题
 
 Q：   
