@@ -1,7 +1,6 @@
 
 # 戌亥床
-<img src="https://pic.imgdb.cn/item/62cdff4bf54cd3f93741c01a.jpg" width=25% />
-
+![8a959ef8b83a285b66278fdd3ddee0a.jpg](https://s2.loli.net/2022/07/31/Nh6UdCTLVxib28B.jpg)
 
 >Toko talks in a mashed up Kansai dialect and calls other livers with -han honorific. 
 >

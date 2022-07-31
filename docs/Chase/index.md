@@ -1,3 +1,3 @@
 # Chase
 
-点击左侧目录打开文章
+<img src="https://s2.loli.net/2022/07/31/bg2OMGLHscd1kU4.png" >

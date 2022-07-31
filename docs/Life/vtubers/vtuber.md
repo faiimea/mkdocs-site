@@ -11,19 +11,21 @@ title: 虚拟主播
 ## Meaningful
 >“不只是vtuber”
 ### 神楽めあ
-<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c1521.png" width=25% />
+<img src="https://s2.loli.net/2022/07/31/2dvJaXzZoELMm7K.webp" width=25% />
 
 ### 凑あくあ
-<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c156c.png" width=25% />
+<img src="https://s2.loli.net/2022/07/31/O4THd7538xpzKeF.webp" width=25% />
 
 ### 戌亥床
-<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c15eb.png" width=25% />
+<a href ="https://faiimea.github.io/mkdocs-site/Life/vtubers/inui/"><img src="https://s2.loli.net/2022/07/31/wlLXKDcICWosVAq.webp" width=25% />
+
+[“歌うことが大好き！ケルベロスの戌亥とこです。”](https://faiimea.github.io/mkdocs-site/Life/vtubers/inui/)
 
 ### 火羽ひのめ
-<img src="https://pic.imgdb.cn/item/62db4df0f54cd3f9378c1561.png" width=25% />
+<img src="https://s2.loli.net/2022/07/31/aFldU1icBb952wV.webp" width=25% />
 
 ### 绊爱
-<a href ="https://faiimea.github.io/mkdocs-site/Life/vtubers/kizuno/"><img src=https://pic.imgdb.cn/item/62db50bdf54cd3f937976c87.png width=25%></a>
+<a href ="https://faiimea.github.io/mkdocs-site/Life/vtubers/kizuno/"><img src=https://s2.loli.net/2022/07/31/TWkoCtI1mhOqiMz.webp width=25%></a>
 
 [“嗨多磨！这里是想和更多人建立羁绊的KizunaAI～”](https://faiimea.github.io/mkdocs-site/Life/vtubers/kizuno/)
 
