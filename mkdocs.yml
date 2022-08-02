@@ -92,6 +92,7 @@ nav:
     - blog/index.md
     - NandToTeris:
       - 汇编器(cpp): blog/NandtoTeris/assembly.md
+      - c8: blog/NandtoTeris/c8.html
 
 
 # [Extensions]
