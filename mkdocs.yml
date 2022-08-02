@@ -91,7 +91,7 @@ nav:
 - blog:
     - blog/index.md
     - NandToTeris:
-      - 汇编器(cpp): blog/NandtoTeris/assembly.md
+      - 汇编 器(cpp): blog/NandtoTeris/assembly.md
      
 
 
