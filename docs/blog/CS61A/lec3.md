@@ -5,7 +5,7 @@
 在环境中，由下至上寻找变量绑定
 To sum up, the environment reflect the scope of variables.More precisely, it is **the scope of declaration**
 
-![env](media\bc9a43ce2c3f6c2735c566a7d6a89d8.png)
+<img src="https://s2.loli.net/2022/08/02/SAJZKo3OzEIq19Q.png" ></a>
 ```py
 # Create nested environment
 x = 1

@@ -102,6 +102,7 @@ nav:
       - Chapter 7 Virtual Machine I Stack Arithmetic: blog/NandtoTeris/c7.md
       - Chapter 8 Virtual Machine II Program Control: blog/NandtoTeris/c8.md
     - UCB-CS61A:
+        - lecture 1: blog/CS61A/lec1.md
         - lecture 2: blog/CS61A/lecture2.md
         - lecture 3: blog/CS61A/lec3.md
     - HAR-CS50:
