@@ -98,7 +98,8 @@ nav:
       - Chapter 4 Machine Languaged: blog/NandtoTeris/c4.md
       - Chapter 5 Computer Architecture: blog/NandtoTeris/c5.md
       - Chapter 6 Assembler: blog/NandtoTeris/c6.md
-      
+      - Chapter 7 Virtual Machine I Stack Arithmetic: blog/NandtoTeris/c7.md
+      - Chapter 8 Virtual Machine II Program Control: blog/NandtoTeris/c8.md
      
 
 
