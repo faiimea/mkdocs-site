@@ -19,8 +19,8 @@
   - [ ] `MIT-6.042J` Mathematics for Computer Science
 ## 编程入门
   - [x] `SJTU-CS1501H` 程序设计思想与方法 (荣誉) 【**A**】
-  - [ ] `HAR-CS50` This is CS50x
-  - [ ] `USB-CS61A` Structure and Interpretation of Computer Programs(SICP)
+  - [x] `HAR-CS50` This is CS50x
+  - [ ] `UCB-CS61A` Structure and Interpretation of Computer Programs(SICP)
 ## 电子基础
   - [x] `SJTU-EE0501H` 电路理论 (荣誉) 【**A-**】
 ## 数据结构与算法

@@ -52,7 +52,7 @@ nav:
 - 关于:
     - ABOUT/index.md 
     - 更新日志: ABOUT/date.md
-- Life:
+- ACG:
     - Life/index.md
     - 虚拟主播: 
         - Vtubers: Life/vtubers/vtuber.md
@@ -65,7 +65,7 @@ nav:
     - gal: 
         - gals: Life/gals/gal.md
     - game: Life/game.md
-- Chase:
+- Fun:
     - Chase/index.md
     - 音乐: 
         - music: Chase/musics/music.md
@@ -77,7 +77,10 @@ nav:
         - 哲学？: Chase/philos/philo.md
     - 社会: 
         - 社会? : Chase/socies/socie.md
-- Step:
+    - 旅行: 
+        - 游记: Chase/travels/travel.md
+        - 杭州: Chase/travels/hangzhou.md    
+- 专业:
     - Step/index.md   
     - 网站: Step/web.md
     - 书籍: 
@@ -85,12 +88,10 @@ nav:
     - 项目: 
         - 项目line: Step/projects/project.md
         - 项目map: Step/projects/M.A.P.md
-    - 旅行: 
-        - 游记: Step/travels/travel.md
-        - 杭州: Step/travels/hangzhou.md
-- blog:
+
+- Blog:
     - blog/index.md
-    - NandToTeris:
+    - HUJI-NTT:
       - 汇编器(cpp): blog/NandtoTeris/assembly.md
       - Chapter 1 Boolean logic: blog/NandtoTeris/c1.md
       - Chapter 2 Boolean Arithmetic: blog/NandtoTeris/c2.md
@@ -100,7 +101,17 @@ nav:
       - Chapter 6 Assembler: blog/NandtoTeris/c6.md
       - Chapter 7 Virtual Machine I Stack Arithmetic: blog/NandtoTeris/c7.md
       - Chapter 8 Virtual Machine II Program Control: blog/NandtoTeris/c8.md
-     
+    - UCB-CS61A:
+        - lecture 2: blog/CS61A/lecture2.md
+        - lecture 3: blog/CS61A/lec3.md
+    - HAR-CS50:
+        - C语言: blog/CS50/C.md
+        - 网页开发: blog/CS50/Web.md
+        - 硬件: blog/CS50/PC.md
+        - 网络: blog/CS50/inte.md
+        - 多媒体: blog/CS50/mult.md
+        - 安全: blog/CS50/sec.md
+
 
 
 # [Extensions]
