@@ -93,6 +93,7 @@ nav:
     - blog/index.md
     - HUJI-NTT:
       - 汇编器(cpp): blog/NandtoTeris/assembly.md
+      - VS编译器: blog/NandtoTeris/VS_trans.md
       - Chapter 1 Boolean logic: blog/NandtoTeris/c1.md
       - Chapter 2 Boolean Arithmetic: blog/NandtoTeris/c2.md
       - Chapter 3 Sequential Logic: blog/NandtoTeris/c3.md
@@ -105,6 +106,7 @@ nav:
         - lecture 1: blog/CS61A/lec1.md
         - lecture 2: blog/CS61A/lecture2.md
         - lecture 3: blog/CS61A/lec3.md
+        - lecture 4: blog/CS61A/lec4.md
     - HAR-CS50:
         - C语言: blog/CS50/C.md
         - 网页开发: blog/CS50/Web.md
