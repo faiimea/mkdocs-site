@@ -85,6 +85,21 @@ nav:
     - 网站: Step/web.md
     - 书籍: 
         - 书: Step/books/book.md
+        - 《1Q84》: Step/books/《1Q84》.md
+        - 《1984》: Step/books/《1984》.md
+        - 《海边的卡夫卡》: Step/books/《海边的卡夫卡》.md
+        - 《荒原狼》: Step/books/《荒原狼》.md
+        - 《菊与刀》: Step/books/《菊与刀》.md
+        - 《美丽新世界》: Step/books/《美丽新世界》.md
+        - 《挪威的森林》: Step/books/《挪威的森林》.md
+        - 《奇鸟形状录》: Step/books/《奇鸟形状录》.md
+        - 《史蒂夫·乔布斯传》: Step/books/《史蒂夫·乔布斯传》.md
+        - 《西线无战事》: Step/books/《西线无战事》.md
+        - 《悉尼》: Step/books/《悉尼》.md
+        - 《政治经济学概论》: Step/books/《政治经济学概论》.md
+        - 《Economics Lecture Notes》: Step/books/《Economics Lecture Notes》.md
+        - 《Excellent Sheep》: Step/books/《Excellent Sheep》.md
+        - 《Practice of Philosophy》: Step/books/《Practice of Philosophy》.md
     - 项目: 
         - 项目line: Step/projects/project.md
         - 项目map: Step/projects/M.A.P.md
@@ -114,7 +129,8 @@ nav:
         - 网络: blog/CS50/inte.md
         - 多媒体: blog/CS50/mult.md
         - 安全: blog/CS50/sec.md
-
+    - MIT-CS198:
+        - shell: l1.md
 
 
 # [Extensions]
