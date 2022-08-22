@@ -29,6 +29,10 @@ title: 角色
 ## 凉宫春日
 <img src="https://s2.loli.net/2022/07/31/3u6cqlgTvnRDJxU.jpg" width=75%></a>
 
+## 长门有希
+
+<img src="https://pic.imgdb.cn/item/6301dbfc16f2c2beb1500bbd.jpg">
+
 ## 平泽唯
 <img src="https://s2.loli.net/2022/07/31/SkAEhLdOsRMVpWF.jpg" width=75%></a>
 

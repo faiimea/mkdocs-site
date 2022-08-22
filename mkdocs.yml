@@ -106,6 +106,8 @@ nav:
 
 - Blog:
     - blog/index.md
+    - lc:
+      - leetcode: blog/lc/leetcode.md
     - HUJI-NTT:
       - 汇编器(cpp): blog/NandtoTeris/assembly.md
       - VS编译器: blog/NandtoTeris/VS_trans.md
@@ -122,6 +124,7 @@ nav:
         - lecture 2: blog/CS61A/lecture2.md
         - lecture 3: blog/CS61A/lec3.md
         - lecture 4: blog/CS61A/lec4.md
+        - lecture 5: blog/CS61A/lec5.md
     - HAR-CS50:
         - C语言: blog/CS50/C.md
         - 网页开发: blog/CS50/Web.md

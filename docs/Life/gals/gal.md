@@ -27,6 +27,8 @@ title: gal
 
 ## AI-Syoujyo 3
 
+## AI-Syoujyo
+
 ## 女装山脈
 
 ## nekopara
