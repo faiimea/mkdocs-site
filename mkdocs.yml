@@ -129,6 +129,11 @@ nav:
         - note 7: blog/CS61A/2-1.md
         - note 8: blog/CS61A/2-2.md
         - note 9: blog/CS61A/2-3.md
+        - note 10: blog/CS61A/2-4.md
+        - note 11: blog/CS61A/2-5.md
+        - note 12: blog/CS61A/2-6.md
+        - note 13: blog/CS61A/2-7.md
+        
     - HAR-CS50:
         - C语言: blog/CS50/C.md
         - 网页开发: blog/CS50/Web.md

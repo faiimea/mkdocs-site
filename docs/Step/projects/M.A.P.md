@@ -26,6 +26,6 @@
 ## 数据结构与算法
   - [x] `SJTU-CS0501H` 算法与数据结构 (荣誉) 【**A-**】
 ## 软件工程
-  - [ ] `SJTU-NIS1336` 计算机编程实践 【 】
+  - [x] `SJTU-NIS1336` 计算机编程实践 【**A+**】
 ## 体系结构
-  - [ ] `HUJI-NTT` Nand2Tetris
+  - [x] `HUJI-NTT` Nand2Tetris

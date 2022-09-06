@@ -110,7 +110,7 @@ faii曾经在工作，学习以及娱乐的过程中收藏了数以百计的有�
 
 [Medium](https://medium.com/)
 
-
+[NJU-csapp](https://nju-projectn.github.io/ics-pa-gitbook/ics2021/index.html)
 
 
 
@@ -128,7 +128,7 @@ faii曾经在工作，学习以及娱乐的过程中收藏了数以百计的有�
 
 [竞赛列表](https://anl.sjtu.edu.cn/cme/contest/list)
 
-
+[0ops](https://ctfzone.sjtu.cn)
 
 
 
