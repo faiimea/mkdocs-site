@@ -65,22 +65,8 @@ nav:
     - gal: 
         - gals: Life/gals/gal.md
     - game: Life/game.md
-- Fun:
-    - Chase/index.md
-    - 音乐: 
-        - music: Chase/musics/music.md
-    - 探索: 
-        - world: Chase/more/explore.md
-    - 故事: 
-        - stories : Chase/stories/story.md
-    - 哲学: 
-        - 哲学？: Chase/philos/philo.md
-    - 社会: 
-        - 社会? : Chase/socies/socie.md
-    - 旅行: 
-        - 游记: Chase/travels/travel.md
-        - 杭州: Chase/travels/hangzhou.md    
-- 专业:
+  
+- Use:
     - Step/index.md   
     - 网站: Step/web.md
     - 书籍: 
@@ -103,6 +89,10 @@ nav:
     - 项目: 
         - 项目line: Step/projects/project.md
         - 项目map: Step/projects/M.A.P.md
+
+    - 信息安全:
+        - Stack:
+        - CTF:
 
 - Blog:
     - blog/index.md
