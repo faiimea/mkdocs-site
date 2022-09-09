@@ -39,7 +39,7 @@ title: gal
 
 ## 媚肉の香り～ネトリネトラレヤリヤラレ～
 
-## 命运石之门
+## Steins;Gate
 
 ## 水仙
 
@@ -57,4 +57,5 @@ title: gal
 
 ## Liru
 
+## SUMMER!田舍の生活
 
