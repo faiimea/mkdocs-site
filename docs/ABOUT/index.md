@@ -8,11 +8,12 @@ title: 你好
 >
 > __我们的头脑比天空更辽阔__
    
-出于好奇心与控制欲，我一向热衷于获取更多的知识。
 
-在经历了反复的思考后，我发现我无法说服自己满足于 **“一生只做一件事”** 这样的人生。考虑到人生的有限性，在攀登险峰与深入地底之外，我更想去看看远处广阔的平原。
+Hi, here is faii. 
 
-有趣的事情在世界上不停发生。我始终希望**理解他人的思想，学会享受不确定性，纠正自己的劣势人格**。曾经我的梦想是改变世界，而现在，我只希望做一个可靠(reliable)的人。
+I am a sophomore majoring in Cyber Security in Shanghai Jiaotong University. My research interest includes AI Security, Internet Security, and I am practicing in NSEC_lab now.
 
-我以工作日志的形式记录每一天的进步与感悟，虽然过程是曲折而又艰难的，但我仍然前进在**探索未知，认识自我和创造价值**的道路上。
+Any sufficiently advanced technology is indistinguishable from magic, and I'm on my way to be a reliable magician.
+
+
 
