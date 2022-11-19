@@ -10,7 +10,7 @@
   - [x] `SJTU-MARX1208` 思想道德与法治  【**A**】
   - [x] `SJTU-MARX1202` 中国近现代史纲要  【**A**】
   - [ ] `SJTU-MARX1204` 马克思主义基本原理
-  - [ ] `SJTU-PU917` 政治经济学经典导读
+  - [ ] `SJTU-PU917` 政治经济学
   - [x] `SJTU-SI1210` 工程实践  【**A-**】
   - [x] `SJTU-DES1350H` 创新思维与现代设计(荣誉)  【**A+**】
   - [x] `SJTU-PHY1251H` 大学物理I (荣誉) 【**A**】
@@ -37,12 +37,13 @@
   - [x] `SJTU-CS1501H` 程序设计思想与方法 (荣誉) 【**A**】
   - [x] `HAR-CS50` This is CS50x
   - [x] `UCB-CS61A` Structure and Interpretation of Computer Programs(SICP)
+  - [ ] `MIT-CS198` Missing semester
 
 
 ## 电子基础
   - [x] `SJTU-EE0501H` 电路理论 (荣誉) 【**A-**】
   - [ ] `SJTU-EST2501` 数字电子技术
-  - [ ] `SJTU-EE1503-5` 工程实践与科技创新I 【**A-**】
+  - [x] `SJTU-EE1503-5` 工程实践与科技创新I 【**A-**】
 
 
 ## 数据结构与算法
@@ -62,7 +63,7 @@
   - [ ] `MIT-6.S081` Operating System Engineering
 
 ## 信息安全
-  - [ ] `SJTU-NIS2301` 网络空间安全及法律法规
+  - [ ] `SJTU-NIS2301` 网络空间安全导论
 
 ## 人工智能
   - [ ] `Coursera` Deeplearning_ai from Andrew Ng

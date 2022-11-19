@@ -95,45 +95,18 @@ nav:
 
 - Blog:
     - blog/index.md
-    - lc:
-      - leetcode: blog/lc/leetcode.md
+    - CSLIY:
+      - HAR-CS50: blog/CSLIY/HAR-CS50.md
+      - MIT-CS198: blog/CSLIY/MIT-CS198.md
+      - MIT-6.042J: blog/CSLIY/MIT-6.042J.md
+      - HUJI-NTT: blog/CSLIY/HUJI-NTT.md
+      - UCB-CS61A: blog/CSLIY/UCB-CS61A.md
+      - UCB-CS61C: blog/CSLIY/UCB-CS61C.md
+      - CMU-CS15_213: blog/CSLIY/CMU-CS15_213.md
+      - leetcode_101: blog/CSLIY/leetcode.md
     - NSEC:
       - PDNPulse: blog/NSEC/PDNPulse.md
       - DeHiREC: blog/NSEC/DeHiREC.md
-    - HUJI-NTT:
-      - 汇编器(cpp): blog/NandtoTeris/assembly.md
-      - VS编译器: blog/NandtoTeris/VS_trans.md
-      - Chapter 1 Boolean logic: blog/NandtoTeris/c1.md
-      - Chapter 2 Boolean Arithmetic: blog/NandtoTeris/c2.md
-      - Chapter 3 Sequential Logic: blog/NandtoTeris/c3.md
-      - Chapter 4 Machine Languaged: blog/NandtoTeris/c4.md
-      - Chapter 5 Computer Architecture: blog/NandtoTeris/c5.md
-      - Chapter 6 Assembler: blog/NandtoTeris/c6.md
-      - Chapter 7 Virtual Machine I Stack Arithmetic: blog/NandtoTeris/c7.md
-      - Chapter 8 Virtual Machine II Program Control: blog/NandtoTeris/c8.md
-    - UCB-CS61A:
-        - note 1: blog/CS61A/lec1.md
-        - note 2: blog/CS61A/lecture2.md
-        - note 3: blog/CS61A/lec3.md
-        - note 4: blog/CS61A/lec4.md
-        - note 5: blog/CS61A/lec5.md
-        - note 6: blog/CS61A/l6.md
-        - note 7: blog/CS61A/2-1.md
-        - note 8: blog/CS61A/2-2.md
-        - note 9: blog/CS61A/2-3.md
-        - note 10: blog/CS61A/2-4.md
-        - note 11: blog/CS61A/2-5.md
-        - note 12: blog/CS61A/2-6.md
-        - note 13: blog/CS61A/2-7.md
-    - HAR-CS50:
-        - C语言: blog/CS50/C.md
-        - 网页开发: blog/CS50/Web.md
-        - 硬件: blog/CS50/PC.md
-        - 网络: blog/CS50/inte.md
-        - 多媒体: blog/CS50/mult.md
-        - 安全: blog/CS50/sec.md
-    - MIT-CS198:
-        - shell: l1.md
 
 
 # [Extensions]
