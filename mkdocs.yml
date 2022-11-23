@@ -60,11 +60,11 @@ nav:
         - 戌亥床:  Life/vtubers/inui.md
     - 动漫: 
         - animes: Life/animes/anime.md
-        - Grandblue: Life/animes/Grandblue.md
+        # - Grandblue: Life/animes/Grandblue.md
     - 角色: Life/character.md
     - gal: 
         - gals: Life/gals/gal.md
-    - game: Life/game.md
+    # - game: Life/game.md
   
 - Use:
     - Step/index.md   
@@ -87,11 +87,9 @@ nav:
     #     - 《Excellent Sheep》: Step/books/《Excellent Sheep》.md
     #     - 《Practice of Philosophy》: Step/books/《Practice of Philosophy》.md
     - 项目: 
-        - 项目line: Step/projects/project.md
-        - 项目map: Step/projects/M.A.P.md
+        # - 项目line: Step/projects/project.md
+        - faii-map: Step/projects/M.A.P.md
 
-    - 信息安全:
-        - Stack: Step/IS/L&cp.md
 
 - Blog:
     - blog/index.md
@@ -107,6 +105,8 @@ nav:
     - NSEC:
       - PDNPulse: blog/NSEC/PDNPulse.md
       - DeHiREC: blog/NSEC/DeHiREC.md
+      - respeaker V2: blog/NSEC/putty_lab.md
+
 
 
 # [Extensions]
