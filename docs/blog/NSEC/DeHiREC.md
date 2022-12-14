@@ -71,9 +71,20 @@
 通过捕获和处理周围环境中的RF信号，DeHiREC首先分析是否存在由录音机引起的可疑频谱特征。
 ### Step 2:刺激与验证
 一旦出现可疑的EMR信号，我们开始进行EMR催化验证。
-
 利用EMR催化与自适应折叠和SNR计算确定是否为隐藏的语音记录器
 
 ## conclusion
 本文首次尝试检测环境中隐藏的录音机。我们发现ADC产生的共享EMR模式，可用于检测隐藏的语音记录器。为了唯一地识别录音机，我们设计了EMR催化，这是一种主动刺激方法，可以触发ADC的EMR对EMI的反应。因此，我们设计了DeHiREC，这是第一个能够检测隐藏录音机的概念验证系统。我们的评估表明，DeHiREC可以在21个电子设备的干扰下检测记录仪。此外，我们设想我们的方法对检测其他低功耗和无线隐藏设备具有深远意义，我们将进一步研究我们工作的潜在应用。
+
+## Comment
+Summary:
+In this paper, the author proposes a roof-of-concept system called DeHiREC to detect offline hidden voice recorder. In order to cope with the characteristics of miniaturization and disguise of hidden recorders, the author first determined the unique mode of EMR signals sent by the recorder, and located the source of EMR signals (MSoC). Then, the author designed the EMR catalytic algorithm to recognize the EMR from the voice recorder through the active stimulus signal. Finally, the author used the adaptive folding algorithm to enhance the strength of the weak EMR signal and improve the signal-to-noise ratio. The author tested it under different external environment and equipment conditions to show its effectiveness.
+
+Advantage:
+This paper focuses on a common security threat in reality, and proposes the first proof of concept system to detect offline hidden voice recorder from EMR.
+In this paper, the environmental interference, measurement factors and equipment differences that may exist in the real situation are discussed and tested extensively to show the practicability of the system.
+In this paper, the real layout of the system equipment in the actual situation is given, which meets the requirements for the concealment of the detection system in the threat model.
+
+Disadvantages:
+When there is an authorized recording device similar to the hidden voice recorder, it will greatly interfere with the system's judgment, and the solutions not given in the article are relatively vague (such as how to implement whitelist filtering).
 

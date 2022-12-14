@@ -28,8 +28,8 @@
 ## 数学进阶
   - [x] `MIT-6.042J` Mathematics for Computer Science
   - [ ] `SJTU-CS2501H` 离散数学 (荣誉) 
-  - [ ] `SJTU-MATH1206H` 数理方法 (荣誉) 
-  - [ ] `SJTU-MATH1207H` 概率统计 (荣誉) 
+  - [ ] `SJTU-MATH1206H` 数学物理方法 (荣誉) 
+  - [ ] `SJTU-MATH1207H` 概率论与数理统计 (荣誉) 
 
 
 
@@ -57,9 +57,10 @@
 ## 体系结构
   - [x] `HUJI-NTT` Nand2Tetris
   - [ ] `SJTU-NIS2331` 计算机组成与系统结构
-  - [ ] `CMU-CS15_213` 深入理解计算系统
+  - [ ] `CMU-CS15_213` 深入理解计算机系统
 
 ## 操作系统
+  - [ ] `NJU-OS` [操作系统：设计与实现](http://jyywiki.cn/OS/2021/)
   - [ ] `MIT-6.S081` Operating System Engineering
 
 ## 信息安全
