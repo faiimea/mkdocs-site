@@ -34,8 +34,42 @@ Based on the extracted SFDfeatures, we design a deep learning model with a self-
 
 ### 声场与方向性
 
+声场描述了声源在空间上的能量扩散，在不同的位置有不同的声功率，形成声音的指向性。
+
+![](./image/voshield/1.PNG)
+
 衍射效应与声音叠加和干扰一起产生了声音的方向性。声音方向性取决于两个因素：信号频率f和孔径大小a
+
+### 建模
+
+声音方向性导致声场中不同位置的声音功率水平不同，而一个位置功率的时间变化间接描述了声音方向性的变化
+
+为消除音量的影响，通过计算不同麦克风的能量比来处理
+
+![](./image/voshield/2.PNG)
+
+通过公式计算，能量比仅依赖于源孔径与信号频率，定义SFD为整个频带中能量比随时间的变化(a为孔径)
+
+![](./image/voshield/3.PNG)
+
+N为时域中语音命令的帧号，将语音信号转换为每个短帧的频域，则变量可视为恒定频率向量，而孔径大小为唯一变量，即人与扬声器的关键区别。
+
+
 ## System
+
+Voshield由三个部分组成：Pair Fusion, SFD Pattern Extraction, Liveness Detection.
+
+* 检查麦克风阵列布局，选择多个麦克风对以覆盖所有可能的传入语音方向
+* 在SFD模块提取特征，进行数据增强以训练模型
+* SFD特征被送入分类器检测，活体判断
+
+### Pair Fusion
+
+选用平行+对角线的麦克风对，减少信息冗余同时保证全部方向角都考虑到
+
+### SFD Pattern Extraction
+
+
 
 ## Implementation
 
