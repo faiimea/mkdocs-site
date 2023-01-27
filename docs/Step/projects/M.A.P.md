@@ -9,7 +9,7 @@
   - [x] `SJTU-BME1202H` 生物医学导论 (荣誉)
   - [x] `SJTU-MARX1208` 思想道德与法治  【**A**】
   - [x] `SJTU-MARX1202` 中国近现代史纲要  【**A**】
-  - [x] `SJTU-MARX1204` 马克思主义基本原理
+  - [x] `SJTU-MARX1204` 马克思主义基本原理 【**A**】
   - [ ] `SJTU-MARX1203` 毛泽东思想
   - [x] `SJTU-PU917` 政治经济学
   - [x] `SJTU-SI1210` 工程实践  【**A-**】
@@ -17,7 +17,7 @@
   - [x] `SJTU-PHY1251H` 大学物理I - 力学、热学 (荣誉) 【**A**】
   - [x] `SJTU-PHY1252H` 大学物理II - 电磁学、光学、量子力学(荣誉) 【**A**】
   - [ ] `SJTU-PHY1253` 大学物理III - 量子物理
-  - [x] `SJTU-CE2650H` 力学基础 (荣誉) 
+  - [x] `SJTU-CE2650H` 力学基础 (荣誉) 【**A-**】
 
 
 
@@ -41,8 +41,9 @@
 ## 编程入门
   - [x] `SJTU-CS1501H` 程序设计思想与方法 (荣誉) 【**A**】
   - [x] `HAR-CS50` This is CS50x
-  - [x] `UCB-CS61A` Structure and Interpretation of Computer Programs(SICP)
-  - [ ] `MIT-CS198` Missing semester
+  - [x] `UCB-CS61A` [Structure and Interpretation of Computer Programs(SICP)](https://inst.eecs.berkeley.edu/~cs61a/sp21/)
+  - [ ] `MIT-CS198` [Missing semester](https://missing-semester-cn.github.io/)
+  - [ ] [RUST语言之旅](https://tourofrust.com/05_zh-cn.html)
 
 
 ## 电子基础
@@ -60,23 +61,28 @@
 ## 软件工程
   - [x] `SJTU-NIS1336` 计算机编程实践 【**A+**】
   - [ ] `SJTU-NIS2339` 信息安全综合实践 
+  - [ ] `NJU-ICS` [计算机基础实验](https://nju-projectn.github.io/ics-pa-gitbook/ics2021/index.html) 
 
 
 ## 体系结构
-  - [x] `HUJI-NTT` Nand2Tetris
-  - [x] `SJTU-NIS2331` 计算机组成与系统结构
-  - [ ] `CMU-CS15_213` 深入理解计算机系统
+  - [x] `HUJI-NTT` [Nand2Tetris](https://www.coursera.org/)
+  - [x] `SJTU-NIS2331` 计算机组成与系统结构 【**A-**】
+  - [ ] `CMU-CS15_213` [深入理解计算机系统](http://csapp.cs.cmu.edu/3e/labs.html)
+  - [ ] `UCB-CS61C`[Great Ideas in Computer Architecture](https://inst.eecs.berkeley.edu/~cs61c/fa21/)
 
 ## 操作系统
   - [ ] `NJU-OS` [操作系统：设计与实现](http://jyywiki.cn/OS/2021/)
-  - [ ] `MIT-6.S081` Operating System Engineering
+  - [ ] `MIT-6.S081` [Operating System Engineering](https://pdos.csail.mit.edu/6.S081/2021/schedule.html)
   - [ ] `SJTU-NIS2334` 操作系统
-
+  - [ ] `rCore` [rCore:Rust to RISC](http://rcore-os.cn/rCore-Tutorial-Book-v3/index.html)
 ## 编译原理
   - [ ] `SJTU-NIS2336` 编译原理
+  - [ ] `PKU-MINIC` [编译原理课程实践 SysY to RISC_V](https://pku-minic.github.io/online-doc/#/preface/)
 ## 信息安全
   - [ ] `SJTU-NIS2301` 网络空间安全导论
 
 ## 人工智能
-  - [ ] `Coursera` Deeplearning_ai from Andrew Ng
+  - [ ] `Coursera` [Deeplearning_ai from Andrew Ng](https://www.coursera.org/deeplearning-ai)
   - [ ] `SJTU-NIS4307` 人工智能导论
+  - [ ] `D2L` [动手学深度学习](https://zh-v2.d2l.ai/index.html)
+  - [ ] `STF-CS231n`[Deep Learning for Computer Vision](http://cs231n.stanford.edu/schedule.html)

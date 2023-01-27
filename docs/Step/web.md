@@ -58,6 +58,12 @@ faii曾经在工作，学习以及娱乐的过程中收藏了数以百计的有�
 
 [IT桔子 | 泛互联网创业投资项目信息数据库及商业信息服务商](https://www.itjuzi.com/)
 
+[pytorch](https://pytorch.org/)
+
+[VPN](https://511tg.cc/#/dashboard)
+
+[在线汇编](https://godbolt.org/)
+
 
 ## Dict
 
