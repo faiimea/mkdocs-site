@@ -60,32 +60,14 @@ nav:
         - 戌亥床:  Life/vtubers/inui.md
     - 动漫: 
         - animes: Life/animes/anime.md
-        # - Grandblue: Life/animes/Grandblue.md
     - 角色: Life/character.md
     - gal: 
-        - gals: Life/gals/gal.md
+        - gals: Life/gals/gal.md #TODO
     # - game: Life/game.md
   
 - Use:
     - Step/index.md   
     - 网站: Step/web.md
-    # - 书籍: 
-    #     - 书: Step/books/book.md
-    #     - 《1Q84》: Step/books/《1Q84》.md
-    #     - 《1984》: Step/books/《1984》.md
-    #     - 《海边的卡夫卡》: Step/books/《海边的卡夫卡》.md
-    #     - 《荒原狼》: Step/books/《荒原狼》.md
-    #     - 《菊与刀》: Step/books/《菊与刀》.md
-    #     - 《美丽新世界》: Step/books/《美丽新世界》.md
-    #     - 《挪威的森林》: Step/books/《挪威的森林》.md
-    #     - 《奇鸟形状录》: Step/books/《奇鸟形状录》.md
-    #     - 《史蒂夫·乔布斯传》: Step/books/《史蒂夫·乔布斯传》.md
-    #     - 《西线无战事》: Step/books/《西线无战事》.md
-    #     - 《悉尼》: Step/books/《悉尼》.md
-    #     - 《政治经济学概论》: Step/books/《政治经济学概论》.md
-    #     - 《Economics Lecture Notes》: Step/books/《Economics Lecture Notes》.md
-    #     - 《Excellent Sheep》: Step/books/《Excellent Sheep》.md
-    #     - 《Practice of Philosophy》: Step/books/《Practice of Philosophy》.md
     - 项目: 
         # - 项目line: Step/projects/project.md
         - faii-map: Step/projects/M.A.P.md
@@ -95,14 +77,15 @@ nav:
     - blog/index.md
     - CSLIY:
       - HAR-CS50: blog/CSLIY/HAR-CS50.md
-      - MIT-CS198: blog/CSLIY/MIT-CS198.md
-      - MIT-6.042J: blog/CSLIY/MIT-6.042J.md
+      # - MIT-CS198: blog/CSLIY/MIT-CS198.md
+      # - MIT-6.042J: blog/CSLIY/MIT-6.042J.md
       - HUJI-NTT: blog/CSLIY/HUJI-NTT.md
       - UCB-CS61A: blog/CSLIY/UCB-CS61A.md
-      - UCB-CS61C: blog/CSLIY/UCB-CS61C.md
+      # - UCB-CS61C: blog/CSLIY/UCB-CS61C.md
       - CMU-CS15_213: blog/CSLIY/CMU-CS15_213.md
-      - leetcode_101: blog/CSLIY/leetcode.md
+      # - leetcode_101: blog/CSLIY/leetcode.md
       - NJU_PA: blog/CSLIY/pa.md
+      - D2l: blog/CSLIY/D2l.md
     - NSEC:
       - PDNPulse: blog/NSEC/PDNPulse.md
       - DeHiREC: blog/NSEC/DeHiREC.md
