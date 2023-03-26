@@ -154,3 +154,364 @@ for epoch in range(num_epochs):
 - 通过调用优化器来更新模型参数。
 
 ## Softmax回归-分类
+
+回归与分类的区别：单连续数值输出->多个输出，输出i为预测第i类的置信度
+
+softmax操作子将置信度转换为概率，衡量概率的区别通过交叉熵进行，在化简后为-log(y^_y)，梯度就是真实概率与预测概率的区别
+$$
+\hat{\mathbf{y}} = \mathrm{softmax}(\mathbf{o})\quad \text{其中}\quad \hat{y}_j = \frac{\exp(o_j)}{\sum_k \exp(o_k)}
+$$
+同样，在分类问题中也可以使用小批量样本的矢量化
+
+O=XW+b, Y=softmax(O)
+
+#### Softmax函数
+
+softmax函数给出了一个向量$ \hat{\mathbf{y}} $，
+
+我们可以将其视为“对给定任意输入$\mathbf{x}$的每个类的条件概率”。
+
+例如，$ \hat{y}_1$=$P(y=\text{猫} \mid \mathbf{x})$。
+
+假设整个数据集$\{\mathbf{X}, \mathbf{Y}\}$具有$n$个样本，
+
+其中索引$ i $的样本由特征向量$\mathbf{x}^{(i)}$和独热标签向量$\mathbf{y}^{(i)}$组成。
+
+我们可以将估计值与实际值进行比较：
+$$
+P(\mathbf{Y} \mid \mathbf{X}) = \prod_{i=1}^n P(\mathbf{y}^{(i)} \mid \mathbf{x}^{(i)}).
+$$
+根据最大似然估计，我们最大化$P(\mathbf{Y} \mid \mathbf{X})$，相当于最小化负对数似然：
+
+
+
+$$
+-\log P(\mathbf{Y} \mid \mathbf{X}) = \sum_{i=1}^n -\log P(\mathbf{y}^{(i)} \mid \mathbf{x}^{(i)})
+
+= \sum_{i=1}^n l(\mathbf{y}^{(i)}, \hat{\mathbf{y}}^{(i)}),
+$$
+
+
+
+其中，对于任何标签$\mathbf{y}$和模型预测$\hat{\mathbf{y}}$，损失函数为：
+
+$$
+l(\mathbf{y}, \hat{\mathbf{y}}) = - \sum_{j=1}^q y_j \log \hat{y}_j.
+$$
+这里使用交叉熵作为损失函数，符合极大似然估计（和线性回归也有类似之处）
+
+关于softmax函数的导数，涉及到稍微有一点点复杂的数学运算，不做收录
+$$
+\partial_{o_j} l(\mathbf{y}, \hat{\mathbf{y}}) = \frac{\exp(o_j)}{\sum_{k=1}^q \exp(o_k)} - y_j = \mathrm{softmax}(\mathbf{o})_j - y_j.
+$$
+得到梯度即为softmax模型分配的概率与实际情况之间的差异。
+
+关于信息论的知识在此处值收录这段比喻：
+
+- 如果把熵$H(P)$想象为“知道真实概率的人所经历的惊异程度”，那么什么是交叉熵？
+
+交叉熵**从**$P$**到**$Q$，记为$H(P, Q)$。我们可以把交叉熵想象为“主观概率为$Q$的观察者在看到根据概率$P$生成的数据时的预期惊异”。当$P=Q$时，交叉熵达到最低。在这种情况下，从$P$到$Q$的交叉熵是$H(P, P)= H(P)$。（就像写MDAD时发现准确率接近50%时我的惊异最大w他妈的根本没有起到分类的作用啊（恼））
+
+简而言之，我们可以从两方面来考虑交叉熵分类目标：
+
+（i）最大化观测数据的似然；（ii）最小化传达标签所需的惊异。
+
+#### 数据集
+
+终于来到了大家都喜欢的`torchvision,transforms`这些包的使用了（喜
+
+来过一遍流程罢
+
+```python
+import torch
+import torchvision
+from torch.utils import data
+from torchvision import transforms
+
+# 通过ToTensor实例将图像数据从PIL类型变换成32位浮点数格式，
+# 并除以255使得所有像素的数值均在0～1之间
+trans = transforms.ToTensor()
+mnist_train = torchvision.datasets.FashionMNIST(
+    root="../data", train=True, transform=trans, download=True)
+mnist_test = torchvision.datasets.FashionMNIST(
+    root="../data", train=False, transform=trans, download=True)
+```
+
+最简单的预处理：图片文件改变格式为tensor
+
+`transform`参数：在读取时默认的操作
+
+此时分为训练集和测试集
+
+```python
+>>> mnist_train[0][0].shape
+torch.Size([1, 28, 28])
+```
+
+为单通道28x28的图片,`[0][0]`的原因是第一阶为区分images和labels，第二阶为images内部的排序
+
+```python
+X, y = next(iter(data.DataLoader(mnist_train, batch_size=18)))
+```
+
+通过DataLoader可以读取图片内容和标签内容
+
+```python
+batch_size = 256
+
+def get_dataloader_workers():  
+    """使用4个进程来读取数据"""
+    return 4
+
+train_iter = data.DataLoader(mnist_train, batch_size, shuffle=True,
+                             num_workers=get_dataloader_workers())
+```
+
+通过DataLoader也可以设置小批量的读取方法，此处也设置了打乱顺序为true
+
+读取数据集的内容大概到此为止，输出了API为DataLoader，以供神经网络的训练
+
+#### Softmax 0-1
+
+首先读入数据，这里的load_data是上方函数的总和
+
+```python
+import torch
+from IPython import display
+from d2l import torch as d2l
+
+batch_size = 256
+train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
+```
+
+由于无法直接处理图片特征，将图片展平为向量（丢失一些信息）
+
+```python
+num_inputs = 784 # 28x28 image
+num_outputs = 10 # 10 types
+
+W = torch.normal(0, 0.01, size=(num_inputs, num_outputs), requires_grad=True)
+b = torch.zeros(num_outputs, requires_grad=True)
+```
+
+这里的W为784列，10行，而输入为784列
+
+***关于tensor的求和函数* **
+
+```python
+>>> X = torch.tensor([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
+>>> X.sum(0, keepdim=True), X.sum(1, keepdim=True)
+
+(tensor([[5., 7., 9.]]),
+ tensor([[ 6.],
+         [15.]]))
+```
+
+`sum()`中的dim具体指的是在操作的时候，将哪个维度的shape值变为1
+
+0-将行数变为1，1-将列数变为1
+
+回想一下，实现softmax由三个步骤组成：
+
+1. 对每个项求幂（使用`exp`）；
+2. 对每一行求和（小批量中每个样本是一行），得到每个样本的规范化常数；
+3. 将每一行除以其规范化常数，确保结果的和为1。
+
+因此批量的softmax操作函数如下：
+
+```python
+def softmax(X):
+    X_exp = torch.exp(X)
+    partition = X_exp.sum(1, keepdim=True)
+    return X_exp / partition  # 这里应用了广播机制
+```
+
+每一行代表一个样本在各个种类的置信度
+
+实现softmax回归如下：
+
+```python
+def net(X):
+    return softmax(torch.matmul(X.reshape((-1, W.shape[0])), W) + b)
+```
+
+X为256x784的矩阵
+
+继续定义损失函数：
+
+***列表的高级索引***
+
+```python
+>>> y = torch.tensor([0, 2])
+y_hat = torch.tensor([[0.1, 0.3, 0.6], [0.3, 0.2, 0.5]])
+y_hat[[0, 1], y]
+# 对0号样本，拿出第0个元素，对1号样本，拿出第2个元素
+tensor([0.1000, 0.5000])
+```
+
+因此可以改进交叉熵损失函数：
+
+```python
+def cross_entropy(y_hat, y):
+    return - torch.log(y_hat[range(len(y_hat)), y])
+# 由于y的0-1性，在这里省去，使公式更简洁
+cross_entropy(y_hat, y)
+```
+
+继续实现工具函数：除了损失函数，也需要正确率函数
+
+```python
+def accuracy(y_hat, y):  #@save
+    """计算预测正确的数量"""
+    # 判断：y_hat为二元矩阵，且列数大于1
+    if len(y_hat.shape) > 1 and y_hat.shape[1] > 1:
+        y_hat = y_hat.argmax(axis=1)
+        # 找到每一行元数最大的项
+    # 类型转换cmp
+    cmp = y_hat.type(y.dtype) == y
+    # 这里的转化是因为bool不可以sum，要转换为y对应的int型
+    return float(cmp.type(y.dtype).sum())
+  
+accuracy(y_hat, y) / len(y)
+```
+
+扩展工具函数，使其可以计算某个模型的精度
+
+```python
+class Accumulator:  #@save
+    """在n个变量上累加"""
+    def __init__(self, n):
+        self.data = [0.0] * n
+
+    def add(self, *args):
+        self.data = [a + float(b) for a, b in zip(self.data, args)]
+
+    def reset(self):
+        self.data = [0.0] * len(self.data)
+	
+  	# 当实例对象做p[key] 运算时，会调用类中的方法__getitem__
+    def __getitem__(self, idx):
+        return self.data[idx]
+
+def evaluate_accuracy(net, data_iter):  #@save
+    """计算在指定数据集上模型的精度"""
+    # data_iter将为之前封装好的Dataloader迭代器
+    if isinstance(net, torch.nn.Module):
+        net.eval()  # 将模型设置为评估模式，不会计算梯度，不反向传播
+    metric = Accumulator(2)  # 正确预测数、预测总数
+    # Accumulator 累加器，使用方法见下（似乎只是对list改了一点API）
+    with torch.no_grad():
+        for X, y in data_iter:
+          	# y.numel()为样本的总数
+            metric.add(accuracy(net(X), y), y.numel())
+    return metric[0] / metric[1]
+```
+
+---
+
+在完成了工具函数之后，开始搭建训练框架
+
+```python
+lr = 0.1
+
+def updater(batch_size):
+    return d2l.sgd([W, b], lr, batch_size)
+
+def train_epoch_ch3(net, train_iter, loss, updater):  #@save
+    """训练模型一个迭代周期（定义见第3章）"""
+    # 将模型设置为训练模式
+    if isinstance(net, torch.nn.Module):
+        net.train()
+    # 训练损失总和、训练准确度总和、样本数
+    metric = Accumulator(3)
+    for X, y in train_iter:
+        # 计算梯度并更新参数，正向传播
+        y_hat = net(X)
+        # 计算损失函数
+        l = loss(y_hat, y)
+        if isinstance(updater, torch.optim.Optimizer):
+            # 使用PyTorch内置的优化器和损失函数
+            # 清零优化器内已有的梯度
+            updater.zero_grad()
+            # 依据损失函数进行一次反向传播
+            l.mean().backward()
+            # 依据优化器进行一次更新梯度
+            # updater封装了优化器，在优化器初始化时已经与模型绑定
+            updater.step()
+        else:
+            # 使用定制的优化器和损失函数
+            l.sum().backward()
+            updater(X.shape[0])
+        metric.add(float(l.sum()), accuracy(y_hat, y), y.numel())
+    # 返回训练损失和训练精度
+    return metric[0] / metric[2], metric[1] / metric[2]
+```
+
+*优化器的梯度清零是一个trick，由于在torch中会默认把梯度叠加，因此如果不清零的话会起到扩大效果的作用
+
+同时，如果不清零的话会浪费空间（多保存计算图）
+
+之后在对训练函数进一步抽象，给出训练所需的函数（迭代）
+
+```python
+def train_ch3(net, train_iter, test_iter, loss, num_epochs, updater):  #@save
+    """训练模型（定义见第3章）"""
+    for epoch in range(num_epochs):
+        train_metrics = train_epoch_ch3(net, train_iter, loss, updater)
+        test_acc = evaluate_accuracy(net, test_iter)
+    train_loss, train_acc = train_metrics
+    assert train_loss < 0.5, train_loss
+    assert train_acc <= 1 and train_acc > 0.7, train_acc
+    assert test_acc <= 1 and test_acc > 0.7, test_acc
+
+num_epochs = 10
+train_ch3(net, train_iter, test_iter, cross_entropy, num_epochs, updater)
+```
+
+在训练后，也给出进行实际预测的接口：
+
+```python
+def predict_ch3(net, test_iter, n=6):  #@save
+    """预测标签（定义见第3章）"""
+    for X, y in test_iter:
+        break
+    # 真实标号
+    trues = d2l.get_fashion_mnist_labels(y)
+    # 预测标号
+    preds = d2l.get_fashion_mnist_labels(net(X).argmax(axis=1))
+    titles = [true +'\n' + pred for true, pred in zip(trues, preds)]
+    d2l.show_images(
+        X[0:n].reshape((n, 28, 28)), 1, n, titles=titles[0:n])
+
+predict_ch3(net, test_iter)
+```
+
+#### softmax-模板
+
+同样，softmax也可以利用开源的库进行更快速的实现
+
+1. 数据调用同上，没什么好改的
+
+2. 构造模型：
+
+```python
+# PyTorch不会隐式地调整输入的形状。因此，
+# 我们在线性层前定义了展平层（flatten），来调整网络输入的形状(保留第0维，其他均展开成向量，0维为batch维)
+net = nn.Sequential(nn.Flatten(), nn.Linear(784, 10))
+
+def init_weights(m):
+    if type(m) == nn.Linear:
+        nn.init.normal_(m.weight, std=0.01)
+        
+# apply会对每一层运行内部函数
+net.apply(init_weights);
+
+loss = nn.CrossEntropyLoss(reduction='none')
+
+trainer = torch.optim.SGD(net.parameters(), lr=0.1)
+
+num_epochs = 10
+d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
+```
+
+利用已有的API，可以更快的搭建模型
